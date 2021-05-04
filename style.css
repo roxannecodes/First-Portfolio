@@ -1,0 +1,40 @@
+
+/* NAV BAR */
+
+.flex-nav{
+ display:flex;
+ justify-content: flex-end;
+ background-color: rgb(131, 239, 253);
+ wrap: wrap;
+}
+
+.flex-nav > div {
+  margin: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* welcome section */
+.flex-welcome{
+  display: flex;
+}
+
+.flex-welcome h1{
+  font-size: 75px;
+}
+
+.flex h2
+
+/* RECENT PROJECTS */
+
+
+.flex-projects{
+
+}
+
+.flex-projects > div{
+
+}
+
+
