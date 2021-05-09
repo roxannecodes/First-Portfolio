@@ -14,7 +14,7 @@ html{
 body{
  margin-left:0px;
  font-family: 'Roboto', sans-serif;
- background-color: white;
+ background-color: rgb(73, 155, 158);
  color: #1c1c1c;
 
  } 
@@ -25,7 +25,8 @@ body{
 
 
 #icon-bar{
-  background-color:rgb(248, 168, 77);
+  background-color:rgb(248, 168, 77); 
+
   width:70px;
   height:100%;
   position: fixed;
@@ -46,7 +47,7 @@ body{
   font-size: 30px;
   margin-left:0;
   margin-top:30px;
-  
+
 }
 
 .icon-container a:hover{
@@ -66,8 +67,8 @@ nav ul{
  float: right;
   height: 50px;
   list-style-type: none;
-  margin-right: 2em;
-  max-width: 55%;
+  margin-right: 12em;
+  max-width: 35%;
   margin-top:40px;
   }
 
@@ -92,12 +93,8 @@ nav a:hover{
   font-weight:bold;
 }
 
-@media screen and (max-width:780px) {
-  nav ul{
-    justify-content:center;
-  
-  }
-}
+
+
 
 /*WELCOME SECTION */
 
@@ -107,18 +104,28 @@ margin-bottom:0;
 padding:4em;
 padding-top:0em;
 margin-top:0;
+width: 100%;
 
 }
 
 #welcome .container{
-  display:inline-flex;
+display:inline-flex;
+margin-right:0;
+
 }
 
 #welcome img{
-padding-left: 1em;
+padding-left: 2em;
 margin-left:80px;
-width:500px;
-height:400px;
+margin-top:1em;
+padding-top: 1em;
+width:400px;
+height:500px;
+
+position:relative;
+left:50px;
+bottom:10px;
+
 }
 
 #welcome .welcome-text{
@@ -127,6 +134,12 @@ margin-top:0px;
 display: flex;
 flex-direction: column;
 flex-wrap:wrap;
+
+position: relative;
+left:50px;
+bottom:10px;
+height:100%;
+
 
 }
 
@@ -160,25 +173,103 @@ main{
 
 /* RECENT PROJECTS */
 
+ 
 #work {
+  padding: 0em;
+  justify-content: space-around;
+  width: 165%; 
   margin-bottom:50px;
-  
 }
 
+#work h1{
+ border-bottom: 4px solid rgb(240, 81, 69);
+
+ /* about me */
+ 
+}
 #about{
   margin-bottom:50px;
+  padding: 0em;
+  justify-content: space-around;
+  width: 165%; 
+  margin-bottom:50px;
 }
 
+#about h1{
+ border-bottom: 4px solid rgb(240, 81, 69);
+}
 
+/* MY SKILLS */
 
 #skills{
-
+  margin-bottom:50px;
+  padding: 0em;
+  justify-content: space-around;
+  width: auto; 
+  margin-bottom:30x;
 }
+
+#skills h1{
+ border-bottom: 4px solid rgb(240, 81, 69);
+}
+
+
+  
+  #skills .skill-bars{
+      padding: 2em;
+      margin: 0;
+    
+      width: 100%;
+      background-color: rgb(131, 185, 178);
+      
+
+      border-radius: 10px;
+      
+  }
+  #skills .skill-bars .bar{
+      padding: 2em 0;
+  }
+  #skills .skill-bars .bar .info span{
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #1c1c1c;
+    
+  }
+  #skills .skill-bars .bar .progress-line{
+      position: relative;
+      height: 1em;
+      width: 95%;
+      background-color:rgb(248, 168, 77);
+      margin-top: .3em;
+      border-radius: 5px;
+  }
+  #skills .skill-bars .bar .progress-line:last-child{
+      margin-bottom: .5em;
+  }
+  #skills .skill-bars .bar .progress-line span{
+      height: 100%;
+      width: 95%;
+      background-color: rgb(240, 81, 69);
+      position: absolute;
+  }
+  #skills .skill-bars .bar .progress-line .two{
+      width: 40%;
+  }
+  
+  #skills .skill-bars .bar .progress-line .three{
+      width: 0;
+  }
+
+  #skills .skill-bars .bar .progress-line .four{
+      width: 15%;
+  }
+
+
 
 /*** FOOTER ***/
 
 #footer {
-  width:125%;
+  width:165%;
   height:100%;
   background-color: rgb(248, 168, 77);
   padding:7em;
@@ -189,14 +280,15 @@ main{
 
 
 
-#footer .contact-container{
+#footer .container{
 
 display: flex;
 flex-direction: column;
 flex-wrap:wrap;
 border-radius: 20px;
-width:25%;
-padding-left: 6em;
+width:55%;
+padding-left: 25em;
+justify-items: right;
 }
 
 
