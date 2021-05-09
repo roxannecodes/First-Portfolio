@@ -25,7 +25,7 @@ body{
 
 
 #icon-bar{
-  background-color:powderblue;
+  background-color:rgb(248, 168, 77);
   width:70px;
   height:100%;
   position: fixed;
@@ -36,7 +36,7 @@ body{
 }
 
 .icon-container{
-  margin-top: 100px;
+  margin-top: 120px;
 }
 
 .icon-container a{
@@ -50,7 +50,7 @@ body{
 }
 
 .icon-container a:hover{
-  background-color: white;
+  background-color:  rgb(248, 94, 67);
   color:black;
 }
 
@@ -66,7 +66,7 @@ nav ul{
  float: right;
   height: 50px;
   list-style-type: none;
-  margin-right: 1.5em;
+  margin-right: 2em;
   max-width: 55%;
   margin-top:40px;
   }
@@ -80,33 +80,63 @@ nav ul li a {
    padding: 0.8em;
   font-size: 30px;
   margin-left:0.2em;
-  margin-bottom: ;
+  
 }
 
 nav a:hover{
 
   text-decoration:underline;
-  text-decoration-color: powderblue;
+  text-decoration-color:rgb(248, 94, 67);
   text-decoration-thickness: .3em;  
   transition-delay: 250ms;
   font-weight:bold;
 }
 
+@media screen and (max-width:780px) {
+  nav ul{
+    justify-content:center;
+  
+  }
+}
 
-
-/***WELCOME SECTION***/
+/*WELCOME SECTION */
 
 #welcome{
 height:500px;
 margin-bottom:0;
-padding:7em;
+padding:4em;
+padding-top:0em;
+margin-top:0;
+
 }
+
+#welcome .container{
+  display:inline-flex;
+}
+
+#welcome img{
+padding-left: 1em;
+margin-left:80px;
+width:500px;
+height:400px;
+}
+
+#welcome .welcome-text{
+margin-left:30px;
+margin-top:0px;
+display: flex;
+flex-direction: column;
+flex-wrap:wrap;
+
+}
+
 
 #welcome h1{
 display: flex;
-font-size: 100px;
+font-size: 120px;
 float: left;
-margin-top: 0.5em;
+margin-top: .05em;
+
 
 }
 
@@ -115,10 +145,12 @@ margin-top: 0.5em;
  
 display: flex;
 font-size:30px;
-float:right;
-max-width: 500px;
-
+float:left;
+max-width: 600px;
+margin-top: .7em;
 }
+
+
 
 main{
   padding:6em;
@@ -135,8 +167,9 @@ main{
 
 #about{
   margin-bottom:50px;
-
 }
+
+
 
 #skills{
 
@@ -145,13 +178,13 @@ main{
 /*** FOOTER ***/
 
 #footer {
-  width:100%;
+  width:125%;
   height:100%;
-  background-color: powderblue;
+  background-color: rgb(248, 168, 77);
   padding:7em;
   margin-top:1em;
   margin-right:0;
-
+   
   }
 
 
@@ -189,7 +222,7 @@ padding-left: 6em;
   border-radius: 5px;
   cursor: pointer;
   background-color: #1c1c1c;
-  color:powderblue; 
+  color:rgb(248, 168, 77); 
 
   }
 
