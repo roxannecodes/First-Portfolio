@@ -59,14 +59,23 @@ body{
 .nav-container{
   display:flex;
 
+
+}
+
+.nav-items{
+  display:flex;
+}
+
+@media only screen and (max-width: 500px) {
+  .nav-items  {
+    flex-direction: column-reverse;
+  }
 }
 
 nav ul{
- 
   margin-left:45em;
   height: 50px;
   list-style-type: none;
- 
 
 }
 
@@ -75,7 +84,9 @@ nav ul li a {
   padding: 0.8em;
   font-size: 30px;
   margin-left:0.2em; 
+ 
 }
+
 
 nav a:hover{
   text-decoration:underline;
@@ -188,6 +199,7 @@ main{
   grid-row-gap: 55px;
   background-color:;
   padding: 10px;
+
   width:107%;
   height:700px;
 }
