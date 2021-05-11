@@ -58,16 +58,17 @@ body{
 /*** NAV BAR ***/
 .nav-container{
   display:flex;
-  width:100%;
+
+ 
 }
 
 nav ul{
  
-  margin-left:35em;
+  margin-left:40em;
   height: 50px;
   list-style-type: none;
-  margin-right: 12em;
-  max-width: 35%;
+ 
+ 
   margin-top:40px;
 }
 
@@ -109,7 +110,7 @@ width:100%;
 
 
 #welcome .welcome-text{
-margin-left:30px;
+margin-left:60px;
 margin-top:0px;
 display: flex;
 flex-direction: column;
@@ -141,16 +142,16 @@ margin-top: .7em;
 }
 
 #welcome img{
-padding-left: 3em;
-margin-left:80px;
+padding-left: 5em;
+
 padding-right: 2em;
 margin-top:5em;
 padding-top: 1em;
-max-width:600px;
-height:450px;
+
+height:470px;
 
 position:relative;
-right: 60px;
+left:50px;
 bottom:75px;
 }
 
@@ -170,6 +171,7 @@ main{
   padding-bottom:2em;
   margin-bottom:50px;
   min-height:650px;
+  
 }
 
 #work h1{
@@ -177,14 +179,18 @@ main{
  margin-bottom: 50px;
 }
 
+.work-grid{
+background-color:powderblue;
+border-radius: 10px;
+}
 
  /* about me */
  
 
 #about{
-  padding-top:2em;
+  padding-top:5em;
   justify-content: space-around;
-  width: 110%; 
+
   min-height:650px;
   margin-bottom:50px;
 }
@@ -206,9 +212,9 @@ margin-bottom:0px;
 /* MY SKILLS */
 
 #skills{
-  padding-top:2em;
+  padding-top:5em;
   justify-content: space-around;
-  width: 110%;
+
   margin-bottom: 0px;
   padding-bottom:0px;
  
@@ -225,7 +231,7 @@ margin-bottom:0px;
       padding: 2em;
       margin: 1em;
     
-      width: 95%;
+      
       background-color: rgb(131, 185, 178);
   
       border-radius: 10px;
