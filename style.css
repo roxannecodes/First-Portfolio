@@ -56,19 +56,25 @@ body{
 
 
 /*** NAV BAR ***/
-.nav-container{
-  display:flex;
-
+nav {
+  padding-top:2em;
+  float:right;
 }
+
 
 nav ul{
  
-  margin-left:45em;
   height: 50px;
   list-style-type: none;
- 
+  padding-left:7em;
+  padding-right:7em;
 
 }
+
+.nav-container{
+  display:flex;
+}
+
 
 nav ul li a {
   text-decoration: none;
@@ -91,74 +97,55 @@ nav a:hover{
 /*WELCOME SECTION */
 
 #welcome{
-height:500px;
-margin-bottom:0;
-padding:8em;
-padding-top:0em;
-margin-top:0;
-width: 100%;
+
+padding-left:3em;
+
+
+
 }
 
 #welcome .container{
-display: inline-flex;
-margin-right:0;
-width:100%;
-}
-
-
-
-#welcome .welcome-text{
-margin-left:30px;
-margin-top:0px;
 display: flex;
-flex-direction: column;
-flex-wrap:wrap;
-width:500px;
 
-position: relative;
-left:35px;
-top:10px;
-height:100%;
 }
 
 
-#welcome h1{
 
+
+
+
+.welcome-text h1{
 font-size: 100px;
-float: left;
-width:600px;
-margin-top: .05em;
+
 }
 
 
-#welcome h2{ 
-
+.welcome-text h2{ 
 font-size:30px;
-float:left;
-max-width: 450px;
+
 margin-top: .7em;
+
 }
+
 
 #welcome img{
-padding-left: 0em;
+ width:700px;
+ height:550px;
+ 
+ padding-left: 10em;
+ padding-right: 3em;
+ padding-top: 3em;
 
-padding-right: 5em;
-margin-top:5em;
-padding-top: 1em;
-
-height:500px;
-width:450;
-
-position:relative;
-left:73px;
-bottom:75px;
 }
 
+/* *** MAIN SECTION *** */
 
 main{
-  padding:7em;
-  font-size: 20px;
-  padding-bottom:3em;
+padding:7em;
+padding-bottom:3em;
+
+font-size: 20px;
+
 
 }
 
@@ -194,11 +181,10 @@ main{
 
 .grid-container >div {
   background-color: rgb(136, 185, 185) ;
-  border: ;
+  
   color:rgb(255, 75, 44); 
   border-radius: 10px;
   padding: 125px;
-  
   font-size: 25px;
   font-weight: bolder;
   text-align: center;
@@ -363,3 +349,10 @@ right:70px;
   }
 
    
+@media  screen and (max-width: 600 px) {
+ #icon-bar {
+  background-color: powderblue;
+
+}
+
+}
