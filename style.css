@@ -83,7 +83,18 @@ nav ul li a {
   margin-left:0.2em; 
 }
 
+#home-button{
+  
+    text-decoration:underline;
+  text-decoration-color:rgb(255, 75, 44);
+  text-decoration-thickness: .3em;  
+  transition-delay: 250ms;
+  font-weight:bold;
+}
+
 nav a:hover{
+  color: black;
+  padding-bottom:0.5em;
   text-decoration:underline;
   text-decoration-color:rgb(255, 75, 44);
   text-decoration-thickness: .3em;  
@@ -130,8 +141,8 @@ margin-top: .7em;
 
 
 #welcome img{
- width:800px;
- height:550px;
+ width:675px;
+ height:560px;
  
  padding-left: 10em;
  padding-right: 3em;
@@ -349,9 +360,12 @@ right:70px;
 
   }
 
+
+
+
   /* media querys */
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 768px) {
 
 #icon-bar {
 
