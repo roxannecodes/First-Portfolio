@@ -10,8 +10,8 @@ html{
 
 body{
  margin-left:0px;
- font-family: 'Roboto', sans-serif;
- color: #1c1c1c;
+ font-family: 'georgia', sans-serif;
+ color: #3d3939;
 
  } 
 
@@ -130,7 +130,7 @@ padding-top:75px;
 
 
 .welcome-text h1{
-font-size: 100px;
+font-size: 110px;
 padding-left:.1em;
 
 }
@@ -138,8 +138,9 @@ padding-left:.1em;
 
 .welcome-text h2{ 
 font-size:30px;
-width:500px;
+width:450px;
 margin-top: .7em;
+padding-left:2em;
 font-style: italic;
 
 
@@ -147,8 +148,8 @@ font-style: italic;
 
 
 #welcome img{
- width:850px;
- height:620px;
+ width:840px;
+ height:500px;
  
  padding-left: 6em;
  padding-right: 3em;
@@ -381,17 +382,26 @@ right:70px;
 @media only screen and (max-width:1024px){
 
 
-#welcome{
 
-padding-left:12em;
 
-}
 
-#welcome img{
-  position: relative;
-  right:7em;
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* *************** Tablet-- Portrait */
 
@@ -436,7 +446,7 @@ text-align: center;
 
 .welcome-text{
 
-  width:500px ;
+  width:550px ;
 
   padding-top:0em;
   padding-left:9em;
@@ -510,7 +520,7 @@ text-align: center;
 #welcome .container{
  flex-direction: column;
 
- padding-bottom:65em;
+ padding-bottom:70em;
  padding-top:70px;
 }
 
@@ -546,11 +556,11 @@ margin-top: .7em;
   height:790px;
 
   padding-top: 4em;
-  padding-left:17em;
+  padding-left:9em;
   
   position: relative;
   top:75px;
-
+  right:30px;
 }
 
 main{
