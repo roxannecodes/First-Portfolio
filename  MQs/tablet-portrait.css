@@ -1,0 +1,77 @@
+ @media only screen and (max-width: 768px) {
+
+
+/* Icon-bar */
+
+.icon-container{
+  margin-top: 150px;
+}
+#icon-bar{
+  background-color:aquamarine;
+}
+
+
+/* Nav-bar */
+nav{
+float:inherit;
+
+}
+
+nav ul{
+padding-left:129px;
+margin-top:10px;
+justify-content: space-around;
+text-align: center;
+
+}
+
+
+
+#welcome{
+  padding-bottom:300px;
+  padding-left:2em;
+}
+
+#welcome .container{
+ flex-direction: column;
+ width:800px;
+ height:600px;
+ padding-bottom:150px;
+ padding-top:5px;
+
+
+}
+
+.welcome-text{
+
+  width:550px ;
+
+  padding-top:0em;
+  padding-left:9em;
+}
+
+.welcome-text h1{
+  position: relative;
+  left:80px;
+}
+
+.welcome-text h2{
+  width:550px;
+ position: relative;
+ left:50px;
+}
+
+#welcome img{
+  width:800px;
+  height:600px;
+  padding-top: 0em;
+  padding-left:20em;
+}
+
+
+
+#about{
+  padding-top:400px;
+}
+
+ }
