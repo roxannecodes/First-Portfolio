@@ -1,14 +1,23 @@
 
+
+
+
 /*** defaults ***/
+* {
+  font-family: 'Nanum Gothic Coding', monospace;
+
+}
 
 html{
  scroll-behavior: smooth;
  box-sizing: border-box;
+
+
 }
 
 body{
  margin-left:0px;
- font-family: 'georgia', sans-serif;
+
  color: #3d3939;
 
  } 
@@ -31,7 +40,7 @@ body{
 }
 
 .icon-container{
-  margin-top: 120px;
+  margin-top: 136px;
 }
 
 .icon-container a{
@@ -52,7 +61,7 @@ body{
 
 /*** NAV BAR ***/
 nav {
-  padding-top:2em;
+  padding-top:1em;
 
 }
 
@@ -72,17 +81,19 @@ nav ul{
 
 
 nav ul li a {
+  color: rgb(44, 56, 54);
   text-decoration: none;
   padding: 1em;
   font-size: 30px;
   margin-left:0.2em; 
+  font-family: 'Nanum Gothic Coding', monospace;
 }
 
 #home-button{
   
   text-decoration:underline;
   text-decoration-color:rgb(255, 75, 44);
-  text-decoration-thickness: .3em;  
+  text-decoration-thickness: .15em;  
   text-underline-offset: .2em;
  
   transition-delay: 250ms;
@@ -94,7 +105,7 @@ nav a:hover{
   padding-bottom:2em;
   text-decoration:underline;
   text-decoration-color:rgb(255, 75, 44);
-  text-decoration-thickness: .3em;  
+  text-decoration-thickness: .15em;  
   text-underline-offset: .2em;
   transition-delay: 250ms;
   font-weight:bold;
@@ -118,17 +129,22 @@ padding-top:75px;
 }
 
 .welcome-text{
+  font-family: 'Nanum Gothic Coding', monospace;
+
   position: relative;
   bottom:50px;
   left:10px;
 
 }
 
+.roxanne{
 
+  font-size:140px;
+}
 
 
 .welcome-text h1{
-font-size: 110px;
+font-size: 125px;
 padding-left:.1em;
 
 }
@@ -147,7 +163,7 @@ font-style: italic;
 
 #welcome img{
  width:840px;
- height:500px;
+ height:580px;
  
  padding-left: 6em;
  padding-right: 3em;
@@ -165,6 +181,7 @@ padding:7em;
 padding-bottom:3em;
 
 font-size: 20px;
+font-family: 'Nanum Gothic Coding', monospace;
 
 
 }
@@ -321,10 +338,15 @@ margin-bottom:0px;
   padding:3em;
   margin-top:1em;
   margin-right:0;
+  font-family: 'Nanum Gothic Coding', monospace;
   
   }
 
+.bigger-container{
 
+  width:590px;
+  margin-left:175px;
+}
 
 #footer .container{
 
@@ -343,7 +365,7 @@ right:70px;
  }
 
 #footer input[type="email"]{
-  width: 55%;
+  width: 65%;
   padding: .3em 1em;
   border-radius: 5px;
   margin-left:0; 
@@ -374,7 +396,10 @@ right:70px;
 /* *** TABLET LANDSCAPE *** */
 @media only screen and (max-width:1024px){
 
+
+
 /* Icon-bar */
+
 #icon-bar{
   background-color:pink;
 
@@ -386,6 +411,9 @@ right:70px;
 
 
 /* *** MOBILE LANDSCAPE ************************************ */
+
+
+
 @media only screen and (max-width:812px){
 
 /* Icon bar */
