@@ -67,17 +67,17 @@ nav {
 
 
 nav ul{
- 
+ display:flex;
+
+
   height: 50px;
   list-style-type: none;
-  padding-left:20em;
-  padding-right:7em;
+  padding-left:6.5em;
+
 
 }
 
-.nav-container{
-  display:flex;
-}
+
 
 
 nav ul li a {
