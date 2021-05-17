@@ -68,7 +68,8 @@ nav {
 
 nav ul{
  display:flex;
-
+  justify-content: right;
+  float:right;
 
   height: 50px;
   list-style-type: none;
@@ -400,10 +401,7 @@ right:70px;
 
 /* Icon-bar */
 
-#icon-bar{
-  background-color:pink;
 
-}
 
 
 }
@@ -418,8 +416,8 @@ right:70px;
 
 /* Icon bar */
 
-#icon-bar{
-  background-color:red; 
+
+  
 
   
   height:100%;
