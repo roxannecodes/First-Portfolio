@@ -4,4 +4,4 @@ Built this portfolio site with pure HTML and CSS in an effort to solidify my bas
 
 The layout is mediocre, but in terms of responsivity, it is limited and therefore I will rebuild from scratch with Bootstrap soon :)
 
-live demo --> https://roxanneshoar.github.io/Portfolio/
+live demo --> https://roxannecodes.github.io/Portfolio/
