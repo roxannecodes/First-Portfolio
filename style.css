@@ -58,7 +58,6 @@ body{
 }
 
 
-
 /*** NAV BAR ***/
 nav {
   padding-top:1em;
@@ -73,7 +72,8 @@ nav ul{
 
   height: 50px;
   list-style-type: none;
-  padding-left:6.5em;
+  padding-left:5em;
+  padding-right:2em;
 
 
 }
@@ -166,8 +166,8 @@ font-style: italic;
  width:840px;
  height:580px;
  
- padding-left: 6em;
- padding-right: 3em;
+ padding-left: 7em;
+ padding-right: 1em;
  padding-top: 0em;
 
  position: relative;
