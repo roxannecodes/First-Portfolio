@@ -396,6 +396,51 @@ right:70px;
 /* *** TABLET LANDSCAPE *** */
 @media only screen and (max-width:1024px){
 
+#icon-bar{
+  background-color:blue;
+}
+ 
+#work {
+  padding-top:3em;
+  padding-bottom:3em;
+  margin-bottom:20px;
+  min-height:650px;
+
+  
+}
+
+#work h1{
+ border-bottom: 4px solid rgb(240, 81, 69);
+ margin-bottom: 50px;
+ width:107%;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 350px 350px;
+  grid-column-gap: 75px;
+  grid-row-gap: 55px;
+  background-color:;
+  padding: 10px;
+  width:115%;
+  height:700px;
+
+  margin-left:7em;
+}
+
+.grid-container >div {
+  background-color: rgb(136, 185, 185) ;
+  
+  color:rgb(255, 75, 44); 
+  border-radius: 10px;
+  padding: 125px;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+
+}
 
 
 /* Icon-bar */
@@ -415,7 +460,9 @@ right:70px;
 
 /* Icon bar */
 
-
+#icon-bar{
+background-color:blue;
+}
   
 
   
@@ -750,7 +797,7 @@ margin-bottom:0px;
   width:400%;  
   background-color: rgb(136, 185, 185) ;
   border-radius: 10px;
-  }t,
+  }
 
 
 /*** FOOTER ***/
@@ -761,7 +808,7 @@ margin-bottom:0px;
   background-color: rgb(248, 168, 77);
   padding:3em;
   margin-top:1em;
-  margin-right:2em;gg
+  margin-right:2em;
   
   }
 
