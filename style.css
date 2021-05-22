@@ -1,7 +1,6 @@
 
 
 
-
 /*** defaults ***/
 * {
   font-family: 'Nanum Gothic Coding', monospace;
@@ -492,7 +491,7 @@ text-align: center;
 
 .welcome-text{
 
-  width:550px ;
+  width:650px ;
 
   padding-top:0em;
   padding-left:9em;
@@ -501,6 +500,7 @@ text-align: center;
 .welcome-text h1{
   position: relative;
   left:80px;
+
 }
 
 .welcome-text h2{
@@ -548,6 +548,21 @@ text-align: center;
   transform: translateY(-50%);  
 }
 
+.icon-container{
+  margin-top: 136px;
+}
+
+.icon-container a{
+  text-align: center;
+  color:black;
+  display:block;
+  font-size: 43px;
+  margin-left:0;
+  margin-top:40px;
+  
+}
+
+
 /* Nav-bar */
 nav{
   position: relative;
@@ -567,13 +582,13 @@ nav ul li a{
 
 #welcome{
 
-  padding-bottom:220px;
+  padding-bottom:90px;
 }
 #welcome .container{
  flex-direction: column;
 
- padding-bottom:70em;
- padding-top:70px;
+ padding-bottom:20em;
+ padding-top:110px;
 }
 
 
@@ -587,7 +602,7 @@ nav ul li a{
 }
 
 .welcome-text h1{
-font-size: 110px;
+font-size: 140px;
 
 }
 
@@ -604,8 +619,8 @@ margin-top: .7em;
 
 
 #welcome img{
-  width:950px;
-  height:790px;
+  width:1100px;
+  height:980px;
 
   padding-top: 4em;
   padding-left:9em;
@@ -735,18 +750,18 @@ margin-bottom:0px;
   width:400%;  
   background-color: rgb(136, 185, 185) ;
   border-radius: 10px;
-  }
+  }t,
 
 
 /*** FOOTER ***/
 
 #footer {
-  width:230%;
+  width:300%;
   height:100%;
   background-color: rgb(248, 168, 77);
   padding:3em;
   margin-top:1em;
-  margin-right:0;
+  margin-right:2em;gg
   
   }
 
@@ -756,8 +771,8 @@ margin-bottom:0px;
 
 display: flex;
 flex-direction: column;
-position: inherit;
-padding-left:22em;
+
+
 
 }
 
