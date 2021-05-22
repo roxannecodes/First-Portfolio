@@ -396,16 +396,12 @@ right:70px;
 /* *** TABLET LANDSCAPE *** */
 @media only screen and (max-width:1024px){
 
-#icon-bar{
-  background-color:blue;
-}
  
 #work {
   padding-top:3em;
   padding-bottom:3em;
   margin-bottom:20px;
   min-height:650px;
-
   
 }
 
@@ -424,10 +420,8 @@ right:70px;
   grid-row-gap: 55px;
   background-color:;
   padding: 10px;
-  width:115%;
+  width:107%;
   height:700px;
-
-  margin-left:7em;
 }
 
 .grid-container >div {
@@ -460,9 +454,7 @@ right:70px;
 
 /* Icon bar */
 
-#icon-bar{
-background-color:blue;
-}
+
   
 
   
