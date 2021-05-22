@@ -621,7 +621,7 @@ nav ul li a{
 
 #welcome{
 
-  padding-bottom:90px;
+  padding-bottom:290px;
 }
 #welcome .container{
  flex-direction: column;
@@ -676,7 +676,7 @@ main{
 /* recent projects */
 
 #work {
-  padding-top:6em;
+  padding-top:56em;
   padding-bottom:3em;
   margin-bottom:20px;
   min-height: auto;
@@ -687,7 +687,7 @@ main{
 #work h1{
  font-size:40px;
  margin-bottom: 50px;
- width:230%;
+ width:160%;
  padding-bottom:.15em;
 
 }
@@ -746,7 +746,7 @@ main{
 #about h1{
 font-size:40px;
  margin-bottom: 50px;
- width:120%;
+ width:90%;
  padding-bottom:.15em;
 
 
@@ -780,7 +780,7 @@ margin-bottom:0px;
 #skills h1{
  border-bottom: 4px solid rgb(240, 81, 69);
  margin-bottom:50px;
- width:100%;
+ width:110%;
 }
 
  #skills .skill-bars{
