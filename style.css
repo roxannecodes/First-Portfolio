@@ -18,7 +18,7 @@ body{
  margin-left:0px;
 
  color: #3d3939;
-
+z-index:0 ;
  } 
 
 
@@ -27,8 +27,8 @@ body{
 
 
 #icon-bar{
-  background-color:rgb(248, 168, 77); 
-
+background-color: rgb(255, 163, 44); 
+  z-index: 1;
   width:70px;
   height:100%;
   position: fixed;
@@ -66,8 +66,9 @@ nav {
 
 nav ul{
  display:flex;
-  justify-content: right;
+  justify-content: space-between;
   float:right;
+
 
   height: 50px;
   list-style-type: none;
@@ -83,9 +84,9 @@ nav ul{
 nav ul li a {
   color: rgb(44, 56, 54);
   text-decoration: none;
-  padding: 1em;
+   padding: 1em 1em;
   font-size: 30px;
-  margin-left:0.2em; 
+
   font-family: 'Nanum Gothic Coding', monospace;
 }
 
@@ -302,7 +303,7 @@ margin-bottom:0px;
       position: relative;
       height: 1em;
       width: 95%;
-      background-color:rgb(248, 168, 77);
+  background-color: rgb(255, 163, 44);
       margin-top: .3em;
       border-radius: 5px;
   }
@@ -334,7 +335,7 @@ margin-bottom:0px;
 #footer {
   width:125%;
   height:100%;
-  background-color: rgb(248, 168, 77);
+background-color: rgb(255, 163, 44);
   padding:3em;
   margin-top:1em;
   margin-right:0;
@@ -396,6 +397,120 @@ right:70px;
 /* *** TABLET LANDSCAPE *** */
 @media only screen and (max-width:1024px){
 
+*{
+  zoom:1.05;
+}
+
+.icon-container{
+  margin-top: 135px;
+}
+
+.icon-container a{
+  text-align: center;
+  color:black;
+  display:block;
+  font-size: 30px;
+  margin-left:0;
+  margin-top:30px;
+}
+
+.icon-container a:hover{
+  background-color:  rgb(248, 94, 67);
+  color:black;
+}
+
+
+/*** NAV BAR ***/
+nav {
+  padding-top:3em;
+
+}
+
+
+nav ul{
+ display:flex;
+  justify-content: space-between;
+  float:right;
+
+  height: 50px;
+  list-style-type: none;
+  padding-left:5em;
+  padding-right:2em;
+position: relative;
+left: 20em;
+
+}
+
+
+
+
+nav ul li a {
+  color: rgb(44, 56, 54);
+  text-decoration: none;
+  padding: 1em;
+  font-size: 23px;
+ 
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+
+#welcome{
+
+padding-left:6em;
+
+}
+
+#welcome .container{
+display: flex;
+padding-top:75px;
+
+}
+
+.welcome-text{
+  font-family: 'Nanum Gothic Coding', monospace;
+
+  position: relative;
+  bottom:50px;
+  left:10px;
+
+}
+
+.roxanne{
+
+  font-size:100px;
+}
+
+
+.welcome-text h1{
+font-size: 90px;
+padding-left:.1em;
+
+}
+
+
+.welcome-text h2{ 
+font-size:30px;
+width:400px;
+margin-top: .7em;
+padding-left:2em;
+font-style: italic;
+
+
+}
+
+
+#welcome img{
+ width:470px;
+ height:500px;
+ 
+ padding-left: 3em;
+ padding-right: 1em;
+ padding-top: 0em;
+
+ position: relative;
+ bottom:2em;
+
+}
  
 #work {
   padding-top:3em;
@@ -408,13 +523,13 @@ right:70px;
 #work h1{
  border-bottom: 4px solid rgb(240, 81, 69);
  margin-bottom: 50px;
- width:107%;
+ width:165%;
 }
 
 .grid-container {
   display: grid;
   justify-content: center;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 400px 400px;
   grid-template-rows: 350px 350px;
   grid-column-gap: 75px;
   grid-row-gap: 55px;
@@ -422,6 +537,7 @@ right:70px;
   padding: 10px;
   width:107%;
   height:700px;
+  margin-left:7em;
 }
 
 .grid-container >div {
@@ -436,13 +552,161 @@ right:70px;
 
 }
 
+/* about me */
+ 
 
-/* Icon-bar */
+#about{
+  padding-top:4.5em;
+  justify-content: space-around;
+  width:165%;
+  min-height:650px;
+  margin-bottom:50px;
+}
+
+#about h1{
+ border-bottom: 4px solid rgb(240, 81, 69);
+ margin-bottom:50px; 
+ width:100%;
+
+}
+
+#about-text .container{
+
+display: flex;
+margin-bottom:0px;
+}
+
+#about-text p{
+  width: 95%;
+  text-align: start;
+}
 
 
+
+/* MY SKILLS */
+
+#skills{
+  padding-top:4.5em;
+  justify-content: space-around;
+
+  margin-bottom: 0px;
+  padding-bottom:0px;
+
+}
+
+#skills h1{
+ border-bottom: 4px solid rgb(240, 81, 69);
+ margin-bottom:50px;
+ width:165%;
+}
+
+
+  
+  #skills .skill-bars{
+      padding: 2em;
+      margin: 0;
+      width:165%;
+      
+      background-color: rgb(136, 185, 185) ;
+  
+      border-radius: 10px;
+  }
+
+
+  #skills .skill-bars .bar{
+      padding: 2em 0;
+  }
+  #skills .skill-bars .bar .info span{
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #1c1c1c;
+    
+  }
+  #skills .skill-bars .bar .progress-line{
+      position: relative;
+      height: 1em;
+      width: 95%;
+      margin-top: .3em;
+      border-radius: 5px;
+  }
+  #skills .skill-bars .bar .progress-line:last-child{
+      margin-bottom: .5em;
+  }
+  #skills .skill-bars .bar .progress-line span{
+      height: 100%;
+      width: 75%;
+      background-color: rgb(240, 81, 69);
+      position: absolute;
+  }
+  #skills .skill-bars .bar .progress-line .two{
+      width: 20%;
+  }
+  
+  #skills .skill-bars .bar .progress-line .three{
+      width: 0;
+  }
+
+  #skills .skill-bars .bar .progress-line .four{
+      width: 15%;
+  }
+
+
+#footer {
+  width:155%;
+  height:110%;
+
+  padding:3em;
+  margin-top:1em;
+  margin-right:0;
+  font-family: 'Nanum Gothic Coding', monospace;
+  
+  }
+
+
+#footer .container{
+
+display: flex;
+flex-direction: column;
+position: relative;
+right:140px;
+
+}
+
+
+#footer h2{
+ font-size: 2em;
+ color: #1c1c1c;
+ margin-bottom:0.5em;
+ }
+
+#footer input[type="email"]{
+  width: 65%;
+  padding: .3em 1em;
+  border-radius: 5px;
+  margin-left:0; 
+  }
+
+#footer input[type="email"]:focus{
+  outline: none;
+  }
+
+#footer input[type="submit"]{
+  padding: .3em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1c1c1c;
+  
+
+  }
+
+  #footer h4{
+    margin-top: 0.5em;
+
+  }
 
 
 }
+
 
 
 
@@ -450,12 +714,15 @@ right:70px;
 
 
 
-@media only screen and (max-width:812px){
+@media only screen and (max-width:992px){
 
+*{
+  zoom:1.1;
+}
 /* Icon bar */
 
-
-  
+#icon-bar{
+ z-index:1 ; 
 
   
   height:100%;
@@ -468,7 +735,7 @@ right:70px;
 }
 
 .icon-container{
-  margin-top: 120px;
+  margin-top: 5em;
 }
 
 .icon-container a{
@@ -480,275 +747,155 @@ right:70px;
   margin-top:30px;
 }
 
-
-
-
-/* *** TABLET PORTRAIT ******************************************* */
- @media only screen and (max-width: 768px) {
-
-
-/* Icon-bar */
-
-.icon-container{
-  margin-top: 150px;
-}
-#icon-bar{
-  
+/*** NAV BAR ***/
+nav {
+  padding-top:3em;
+ 
 }
 
-
-/* Nav-bar */
-nav{
-float:inherit;
-
-}
 
 nav ul{
-padding-left:129px;
-margin-top:10px;
-justify-content: space-around;
-text-align: center;
+ display:flex;
+  justify-content: space-around;
+  float:right;
+
+  height: 50px;
+  list-style-type: none;
+  padding-right:2em;
+  position: relative;
+  left:42em;
 
 }
 
 
+nav ul li a {
+  color: rgb(44, 56, 54);
+  text-decoration: none;
+  padding: 1.5em;
+  font-size: 23px;
+ 
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.nav-skills{
+  position: relative;
+  right:40px;
+}
 
 #welcome{
-  padding-bottom:300px;
-  padding-left:2em;
+
+padding-left:6em;
+
 }
 
 #welcome .container{
- flex-direction: column;
- width:800px;
- height:600px;
- padding-bottom:150px;
- padding-top:5px;
-
+display: flex;
+padding-top:75px;
 
 }
 
 .welcome-text{
+  font-family: 'Nanum Gothic Coding', monospace;
 
-  width:650px ;
+  position: relative;
+  bottom:80px;
+  left:3em;
 
-  padding-top:0em;
-  padding-left:9em;
 }
+
+.roxanne{
+
+  font-size:80px;
+}
+
 
 .welcome-text h1{
-  position: relative;
-  left:80px;
-
-}
-
-.welcome-text h2{
-  width:550px;
- position: relative;
- left:50px;
-}
-
-#welcome img{
-  width:800px;
-  height:600px;
-  padding-top: 0em;
-  padding-left:20em;
-}
-
-
-
-#about{
-  padding-top:400px;
-}
-
- }
-
-
-/* *** MOBILE PORTRAIT************************************* */
-
-
-@media only screen and (max-width: 420px){
-
-/* Icon-bar */
-
-#icon-bar{
-  padding-top: 6em;
-}
-
-#icon-bar{
-  
-
-  width:70px;
-  height:100%;
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);  
-}
-
-.icon-container{
-  margin-top: 136px;
-}
-
-.icon-container a{
-  text-align: center;
-  color:black;
-  display:block;
-  font-size: 43px;
-  margin-left:0;
-  margin-top:40px;
-  
-}
-
-
-/* Nav-bar */
-nav{
-  position: relative;
-  left:650px;
-}
-
-nav ul{
-
-padding-top:40px;
-}
-
-nav ul li a{
-  font-size:45px;
-}
-
-/* HOME-Welcome section */
-
-#welcome{
-
-  padding-bottom:290px;
-}
-#welcome .container{
- flex-direction: column;
-
- padding-bottom:20em;
- padding-top:110px;
-}
-
-
-.welcome-text{
- padding-top:0em;
-  padding-left:7em;
-
-  position: relative;
-  left:35px;
-  top:30px;
-}
-
-.welcome-text h1{
-font-size: 140px;
+font-size: 70px;
+padding-left:.1em;
 
 }
 
 
 .welcome-text h2{ 
-font-size:40px;
-
+font-size:26px;
+width:330px;
 margin-top: .7em;
-
+padding-left:1em;
+font-style: italic;
 
 
 }
-
 
 
 #welcome img{
-  width:1100px;
-  height:980px;
+ width:380px;
+ height:400px;
+ 
+ padding-left: 0em;
+ padding-right: 0em;
+ padding-top: 0em;
 
-  padding-top: 4em;
-  padding-left:9em;
-  
-  position: relative;
-  top:75px;
-  right:30px;
+ position: relative;
+ bottom:4em;
+ left:9em;
+
 }
-
-main{
-  padding-left:7.5em;
-}
-
-/* recent projects */
 
 #work {
-  padding-top:56em;
-  padding-bottom:3em;
-  margin-bottom:20px;
-  min-height: auto;
-  justify-content:space-around;
+  padding-top:3em;
+  padding-bottom:5em;
+  margin-bottom:0px;
+  min-height:650px;
   
 }
 
 #work h1{
- font-size:40px;
+ border-bottom: 4px solid rgb(240, 81, 69);
  margin-bottom: 50px;
- width:160%;
- padding-bottom:.15em;
-
+ width:330%;
 }
 
 .grid-container {
-  display: flex;
-  flex-direction: column;
-  height:3000px;
-}
-
-.grid-container >div{
-
- 
-  width:700px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 350px 350px;
+  grid-column-gap: 75px;
+  grid-row-gap: 55px;
+  background-color:;
+  padding: 10px;
+  width:107%;
   height:700px;
+  margin-left:15em;
+}
+
+.grid-container >div {
+  background-color: rgb(136, 185, 185) ;
   
-  padding-left: 5.5em;
-  padding-right:19em;
-
-}
-
-.grid-container >div h2{
-  font-size: 70px;
+  color:rgb(255, 75, 44); 
+  border-radius: 10px;
+  padding: 125px;
+  font-size: 25px;
+  font-weight: bolder;
   text-align: center;
-  width: 300px;
-  padding-left:28px;
-  padding-top:70px;
+
 }
 
-#box-1  {
-  margin-bottom:2em;
+/* about me */
  
-}
-
-#box-2  {
-  margin-bottom:2em;
-}
-
-#box-3  {
-  margin-bottom:2em;
-}
-
-#box-4  {
-  margin-bottom:2em;
-}
-
-/* About Me */
 
 #about{
   padding-top:3em;
   justify-content: space-around;
-  width:160%;
-  padding-bottom:em;
+  width:293%;
+  min-height:650px;
+  margin-bottom:0px;
 }
 
 #about h1{
-font-size:40px;
- margin-bottom: 50px;
- width:90%;
- padding-bottom:.15em;
-
+ border-bottom: 4px solid rgb(240, 81, 69);
+ margin-bottom:50px; 
+ width:113%;
 
 }
 
@@ -759,61 +906,800 @@ margin-bottom:0px;
 }
 
 #about-text p{
-  width: 355%;
+  width: 115%;
   text-align: start;
-  font-size:35px;
+  font-size:1.2em;
 }
-
 
 /* MY SKILLS */
 
 #skills{
-  padding-top:1em;
+  padding-top:3em;
   justify-content: space-around;
-  margin-bottom:50px;
-  width:145%;
 
-
+  margin-bottom: 0px;
+  padding-bottom:0px;
 
 }
 
 #skills h1{
  border-bottom: 4px solid rgb(240, 81, 69);
  margin-bottom:50px;
- width:110%;
+ width:350%;
+}
+
+
+  
+  #skills .skill-bars{
+      padding: 2em;
+      margin: 0;
+      width:350%;
+      
+      background-color: rgb(136, 185, 185) ;
+  
+      border-radius: 10px;
+  }
+
+
+  #skills .skill-bars .bar{
+      padding: 2em 0;
+  }
+  #skills .skill-bars .bar .info span{
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #1c1c1c;
+    
+  }
+  #skills .skill-bars .bar .progress-line{
+      position: relative;
+      height: 1em;
+      width: 95%;
+    
+      margin-top: .3em;
+      border-radius: 5px;
+  }
+  #skills .skill-bars .bar .progress-line:last-child{
+      margin-bottom: .5em;
+  }
+  #skills .skill-bars .bar .progress-line span{
+      height: 100%;
+      width: 75%;
+      background-color: rgb(240, 81, 69);
+      position: absolute;
+  }
+  #skills .skill-bars .bar .progress-line .two{
+      width: 20%;
+  }
+  
+  #skills .skill-bars .bar .progress-line .three{
+      width: 0;
+  }
+
+  #skills .skill-bars .bar .progress-line .four{
+      width: 15%;
+  }
+
+
+
+/*** FOOTER ***/
+
+#footer {
+  width:250%;
+  height:100%;
+
+  padding:3em;
+  margin-top:1em;
+  margin-right:0;
+  font-family: 'Nanum Gothic Coding', monospace;
+  
+  }
+
+.bigger-container{
+
+  width:590px;
+  margin-left:445px;
+}
+
+#footer .container{
+
+display: flex;
+flex-direction: column;
+position: relative;
+right:70px;
+
+}
+
+
+#footer h2{
+ font-size: 2em;
+ color: #1c1c1c;
+ margin-bottom:0.5em;
+ }
+
+#footer input[type="email"]{
+  width: 65%;
+  padding: .3em 1em;
+  border-radius: 5px;
+  margin-left:0; 
+  }
+
+#footer input[type="email"]:focus{
+  outline: none;
+  }
+
+#footer input[type="submit"]{
+  padding: .3em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1c1c1c;
+  color:rgb(248, 168, 77); 
+
+  }
+
+  #footer h4{
+    margin-top: 0.5em;
+
+  }
+
+}
+
+/* *** TABLET PORTRAIT ******************************************* */
+ @media only screen and (max-width: 768px) {
+
+/* Icon-bar */
+
+ *{
+  zoom:1.1;
+}
+/* Icon bar */
+
+#icon-bar{
+ z-index:1 ; 
+
+  
+  height:100%;
+  position: fixed;
+  top: 50%;
+ width:-50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);  
+}
+
+.icon-container{
+  margin-top: 5em;
+}
+
+.icon-container a{
+  text-align: center;
+  color:black;
+  display:block;
+  font-size: 30px;
+  margin-left:0;
+  margin-top:30px;
+}
+
+/*** NAV BAR ***/
+nav {
+  padding-top:3em;
+ 
+}
+
+
+nav ul{
+ display:flex;
+  justify-content: space-around;
+  float:right;
+
+  height: 50px;
+  list-style-type: none;
+  padding-right:2em;
+  position: relative;
+  left:42em;
+
+}
+
+
+nav ul li a {
+  color: rgb(44, 56, 54);
+  text-decoration: none;
+  padding: 1.5em;
+  font-size: 23px;
+ 
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.nav-skills{
+  position: relative;
+  right:40px;
+}
+
+#welcome{
+
+padding-left:6em;
+
+}
+
+#welcome .container{
+display: flex;
+padding-top:75px;
+
+}
+
+.welcome-text{
+  font-family: 'Nanum Gothic Coding', monospace;
+
+  position: relative;
+  bottom:80px;
+  left:3em;
+
+}
+
+.roxanne{
+
+  font-size:80px;
+}
+
+
+.welcome-text h1{
+font-size: 70px;
+padding-left:.1em;
+
+}
+
+
+.welcome-text h2{ 
+font-size:26px;
+width:330px;
+margin-top: .7em;
+padding-left:1em;
+font-style: italic;
+
+
+}
+
+
+#welcome img{
+ width:380px;
+ height:400px;
+ 
+ padding-left: 0em;
+ padding-right: 0em;
+ padding-top: 0em;
+
+ position: relative;
+ bottom:4em;
+ left:9em;
+
+}
+
+#work {
+  padding-top:3em;
+  padding-bottom:5em;
+  margin-bottom:0px;
+  min-height:650px;
+  
+}
+
+#work h1{
+ border-bottom: 4px solid rgb(240, 81, 69);
+ margin-bottom: 50px;
+ width:330%;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 350px 350px;
+  grid-column-gap: 75px;
+  grid-row-gap: 55px;
+  background-color:;
+  padding: 10px;
+  width:107%;
+  height:700px;
+  margin-left:15em;
+}
+
+.grid-container >div {
+  background-color: rgb(136, 185, 185) ;
+  
+  color:rgb(255, 75, 44); 
+  border-radius: 10px;
+  padding: 125px;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+
+}
+
+/* about me */
+ 
+
+#about{
+  padding-top:3em;
+  justify-content: space-around;
+  width:293%;
+  min-height:650px;
+  margin-bottom:0px;
+}
+
+#about h1{
+ border-bottom: 4px solid rgb(240, 81, 69);
+ margin-bottom:50px; 
+ width:113%;
+
+}
+
+#about-text .container{
+
+display: flex;
+margin-bottom:0px;
+}
+
+#about-text p{
+  width: 115%;
+  text-align: start;
+  font-size:1.2em;
+}
+
+/* MY SKILLS */
+
+#skills{
+  padding-top:3em;
+  justify-content: space-around;
+
+  margin-bottom: 0px;
+  padding-bottom:0px;
+
+}
+
+#skills h1{
+ border-bottom: 4px solid rgb(240, 81, 69);
+ margin-bottom:50px;
+ width:350%;
+}
+
+
+  
+  #skills .skill-bars{
+      padding: 2em;
+      margin: 0;
+      width:350%;
+      
+      background-color: rgb(136, 185, 185) ;
+  
+      border-radius: 10px;
+  }
+
+
+  #skills .skill-bars .bar{
+      padding: 2em 0;
+  }
+  #skills .skill-bars .bar .info span{
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #1c1c1c;
+    
+  }
+  #skills .skill-bars .bar .progress-line{
+      position: relative;
+      height: 1em;
+      width: 95%;
+    
+      margin-top: .3em;
+      border-radius: 5px;
+  }
+  #skills .skill-bars .bar .progress-line:last-child{
+      margin-bottom: .5em;
+  }
+  #skills .skill-bars .bar .progress-line span{
+      height: 100%;
+      width: 75%;
+      background-color: rgb(240, 81, 69);
+      position: absolute;
+  }
+  #skills .skill-bars .bar .progress-line .two{
+      width: 20%;
+  }
+  
+  #skills .skill-bars .bar .progress-line .three{
+      width: 0;
+  }
+
+  #skills .skill-bars .bar .progress-line .four{
+      width: 15%;
+  }
+
+
+
+/*** FOOTER ***/
+
+#footer {
+  width:250%;
+  height:100%;
+
+  padding:3em;
+  margin-top:1em;
+  margin-right:0;
+  font-family: 'Nanum Gothic Coding', monospace;
+  
+  }
+
+.bigger-container{
+
+  width:590px;
+  margin-left:445px;
+}
+
+#footer .container{
+
+display: flex;
+flex-direction: column;
+position: relative;
+right:70px;
+
+}
+
+
+#footer h2{
+ font-size: 2em;
+ color: #1c1c1c;
+ margin-bottom:0.5em;
+ }
+
+#footer input[type="email"]{
+  width: 65%;
+  padding: .3em 1em;
+  border-radius: 5px;
+  margin-left:0; 
+  }
+
+#footer input[type="email"]:focus{
+  outline: none;
+  }
+
+#footer input[type="submit"]{
+  padding: .3em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1c1c1c;
+  color:rgb(248, 168, 77); 
+
+  }
+
+  #footer h4{
+    margin-top: 0.5em;
+
+  }
+
+}
+
+
+/* *** MOBILE PORTRAIT************************************* */
+
+
+@media only screen and (max-width: 420px){
+
+/* Icon-bar */
+*{
+  zoom:1;
+}
+#icon-bar{
+
+ z-index: 1;
+  padding-top: 6em;
+  width:70px;
+  height:100%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);  
+}
+
+.icon-container{
+  margin-top: 179px;
+}
+
+.icon-container a{
+  text-align: center;
+  color:black;
+  display:block;
+  font-size: 40px;
+  margin-left:0;
+  margin-top:40px;
+  
+}
+
+
+/* Nav-bar */
+nav{ 
+position: relative;
+left:0em;
+}
+
+nav ul{
+display:flex;
+padding-top:2em;
+
+justify-content: space-around;
+
+height: 50px;
+list-style-type: none;
+padding-right:0;
+}
+
+
+nav ul li a {
+  color: rgb(44, 56, 54);
+  text-decoration: none;
+  padding: 1em;
+  font-size: 50px;
+
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+ .nav-skills{
+  position: relative;
+  right:3em;
+}
+
+
+/* HOME-Welcome section */
+
+#welcome{
+padding-bottom:3em;
+margin-bottom: inherit;
+ 
+}
+#welcome .container{
+ flex-direction: column;
+
+ padding-bottom:0em;
+ padding-top:110px;
+}
+
+
+.welcome-text{
+ padding-top:0em;
+  padding-left:6em;
+
+  position: relative;
+  left:35px;
+  top:30px;
+}
+
+.welcome-text h1{
+font-size: 180px;
+
+}
+.roxanne{
+  font-size:200px;
+}
+
+.welcome-text h2{ 
+font-size:50px;
+width:650px;
+margin-top: .7em;
+padding-left:2.5em;
+font-style: italic;
+}
+
+
+
+#welcome img{
+  width:840px;
+  height:980px;
+
+  padding-top: 3em;
+
+  
+  position: relative;
+  top:45px;
+  right:70px;
+}
+
+main{
+  padding-left:7.5em;
+}
+
+
+/* recent projects */
+
+#work {
+  padding-top:3em;
+  padding-bottom:3em;
+  margin-bottom:20px;
+  min-height: auto;
+  justify-content:space-around;
+
+  width:500%;
+  
+}
+
+#work h1{
+ font-size:75px;
+ margin-bottom: 100px;
+ width:150%;
+ padding-bottom:.15em;
+border-bottom: 7px solid rgb(240, 81, 69);
+
+}
+
+
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  height:3000px;
+  margin-left:0;
+ 
+}
+
+.grid-container >div{
+
+ 
+  width:900px;
+  height:1200px;
+  
+
+}
+
+.grid-container >div h2{
+  font-size: 70px;
+  font-weight:bold;
+  text-align: center;
+  justify-content:center;
+  width: 100%;
+  padding-top:120px;
+}
+
+#box-1  {
+  margin-bottom:5em;
+ 
+}
+
+#box-2  {
+  margin-bottom:5em;
+}
+
+#box-3  {
+  margin-bottom:5em;
+}
+
+#box-4  {
+  margin-bottom:5em;
+}
+
+/* About Me */
+
+#about{
+  padding-top:3em;
+  justify-content: space-around;
+  width:150%;
+  padding-bottom:3em;
+}
+
+#about h1{
+ font-size:75px;
+ margin-bottom: 100px;
+ width:500%;
+ padding-bottom:.15em;
+border-bottom: 7px solid rgb(240, 81, 69);
+
+}
+
+#about-text .container{
+
+display: flex;
+margin-bottom:0px;
+}
+
+#about-text p{
+  width: 500%;
+  text-align: start;
+  font-size:55px;
+}
+
+
+/* MY SKILLS */
+
+#skills{
+  padding-top:3em;
+  padding-bottom:3em;
+  justify-content: space-around;
+  width:150%;
+
+font-size:40px;
+
+}
+
+#skills h1{
+ border-bottom: 7px solid rgb(240, 81, 69);
+ margin-bottom:100px;
+ width:500%;
+ font-size:75px;
 }
 
  #skills .skill-bars{
   padding: 2em;
   margin: 0;
-  width:400%;  
+  width:500%;  
   background-color: rgb(136, 185, 185) ;
   border-radius: 10px;
   }
 
 
 /*** FOOTER ***/
-
 #footer {
-  width:300%;
+
+  width:275%;
   height:100%;
-  background-color: rgb(248, 168, 77);
-  padding:3em;
-  margin-top:1em;
-  margin-right:2em;
+
+  padding:4em;
+  margin-top:2em;
+  margin-right:0;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font:5em;
   
   }
 
+.bigger-container{
 
+  width:590px;
+
+
+}
 
 #footer .container{
 
 display: flex;
 flex-direction: column;
-
-
-
-}
-
+position: relative;
+right:165px;
 
 }
+
+
+#footer h1{
+ font-size: 5em;
+ color: #1c1c1c;
+ margin-bottom:0.5em;
+  
+ }
+
+#footer input[type="email"]{
+  width: 65%;
+  padding: .3em 1em;
+  border-radius: 5px;
+  margin-left:0; 
+  font-size:2em;
+  }
+
+#footer input[type="email"]:focus{
+  outline: none;
+  }
+
+#footer input[type="submit"]{
+  padding: .3em 1em;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #1c1c1c;
+  color:rgb(248, 168, 77); 
+
+font-size:1.5em;
+
+  }
+
+  #footer h4{
+    margin-top: 0.5em;
+    font-size:2.5em;
+  }
+    
+ #footer h6{
+  font-size: 1.72em;
+ }
+
+}
+ 
