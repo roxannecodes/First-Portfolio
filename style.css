@@ -1489,16 +1489,23 @@ font-style: italic;
 
 
 #welcome img{
-  width:840px;
-  height:980px;
+ width:840px;
+ height:980px;
+ 
+ padding-left: 3em;
+ padding-right: 0em;
+ padding-top: 3em;
 
-  padding-top: 3em;
+ position: relative;
+ bottom:0;
+ left:2em;
 
-  
-  position: relative;
-  top:45px;
-  right:70px;
+
 }
+
+
+
+
 
 main{
   padding-left:7.5em;
