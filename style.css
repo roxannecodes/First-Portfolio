@@ -234,7 +234,7 @@ font-family: 'Nanum Gothic Coding', monospace;
  
 
 #about{
-  padding-top:4.5em;
+  padding-top:3em;
   justify-content: space-around;
   width:107%;
   min-height:650px;
@@ -263,7 +263,7 @@ margin-bottom:0px;
 /* MY SKILLS */
 
 #skills{
-  padding-top:4.5em;
+  padding-top:3em;
   justify-content: space-around;
 
   margin-bottom: 0px;
