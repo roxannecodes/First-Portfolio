@@ -11,7 +11,6 @@
 
 html{
  scroll-behavior: smooth;
- box-sizing: border-box;
 
 
 }
@@ -21,6 +20,7 @@ body{
 
  color: #3d3939;
 z-index:0 ;
+
  } 
 
 
@@ -401,8 +401,8 @@ right:70px;
 /* *** TABLET LANDSCAPE *** */
 @media only screen and (max-width:1024px){
 
-*{
-  zoom:1.05;
+body{
+  zoom:-0.25x;
 }
 
 .icon-container{
@@ -441,7 +441,7 @@ nav ul{
   padding-left:5em;
   padding-right:2em;
 position: relative;
-left: 20em;
+
 
 }
 
@@ -527,7 +527,7 @@ font-style: italic;
 #work h1{
  border-bottom: 4px solid rgb(240, 81, 69);
  margin-bottom: 50px;
- width:165%;
+ width:120%;
 }
 
 .grid-container {
@@ -541,7 +541,7 @@ font-style: italic;
   padding: 10px;
   width:107%;
   height:700px;
-  margin-left:7em;
+  margin-left:2em;
 }
 
 .grid-container >div {
@@ -562,7 +562,7 @@ font-style: italic;
 #about{
   padding-top:4.5em;
   justify-content: space-around;
-  width:165%;
+  width:120%;
   min-height:650px;
   margin-bottom:50px;
 }
@@ -601,7 +601,7 @@ margin-bottom:0px;
 #skills h1{
  border-bottom: 4px solid rgb(240, 81, 69);
  margin-bottom:50px;
- width:165%;
+ width:120%;
 }
 
 
@@ -609,7 +609,7 @@ margin-bottom:0px;
   #skills .skill-bars{
       padding: 2em;
       margin: 0;
-      width:165%;
+      width:120%;
       
       background-color: rgb(136, 185, 185) ;
   
@@ -848,6 +848,12 @@ font-style: italic;
  width:330%;
 }
 
+
+
+
+
+
+
 .grid-container {
   display: grid;
   justify-content: center;
@@ -1031,8 +1037,8 @@ right:70px;
 
 /* Icon-bar */
 
- *{
-  zoom:1.1;
+ body{
+  zoom:-0.25x;
 }
 /* Icon bar */
 
@@ -1422,14 +1428,14 @@ nav ul li a {
 
 #welcome{
 padding-bottom:3em;
-margin-bottom: inherit;
+margin-bottom: 3em;;
  
 }
 #welcome .container{
  flex-direction: column;
 
- padding-bottom:0em;
- padding-top:110px;
+ padding-bottom:3em;
+ padding-top:200px;
 }
 
 
@@ -1470,7 +1476,7 @@ font-style: italic;
 
  position: relative;
  bottom:0;
- left:2em;
+ left:3em;
 
 
 }
@@ -1512,13 +1518,17 @@ border-bottom: 7px solid rgb(240, 81, 69);
   display: flex;
   flex-direction: column;
   height:3000px;
-  margin-left:0;
  
+  
+  margin-left:0em;
+ 
+
 }
 
 .grid-container >div{
 
- 
+ padding-left:0;
+ margin-left:0;
   width:900px;
   height:1200px;
   
@@ -1613,7 +1623,7 @@ font-size:40px;
 /*** FOOTER ***/
 #footer {
 
-  width:275%;
+  width:325%;
   height:100%;
 
   padding:4em;
