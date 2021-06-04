@@ -369,6 +369,10 @@ right:70px;
  margin-bottom:0.5em;
  }
 
+ #footer h6{
+   font-size: 1em;
+ }
+
 #footer input[type="email"]{
   width: 65%;
   padding: .3em 1em;
@@ -1321,7 +1325,7 @@ right:70px;
 
 
 #footer h2{
- font-size: 2em;
+ font-size: 1.5em;
  color: #1c1c1c;
  margin-bottom:0.5em;
  }
