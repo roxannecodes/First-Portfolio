@@ -1,10 +1,9 @@
-# 💼 roxfolio.com
+# 💼 roxfolio
 
 I built this portfolio site example with pure HTML and CSS for my first project in responsive web design (actually, it was my first project in general).
 Unfortunately, the responsivity at screens less than 1024px is limited by the PC-first design--and therefore, the page has to be manually zoomed out after loading on the browser of smaller screens. I plan on rebuilding this from scratch after I learn Bootstrap :)
-## Live @ https://roxfolio.com
-
-## Learning Points:
+### Live @ https://roxfolio.com
+### Learning Points:
 - Discovered the importance of moble-first design.
 - Became familiar with the conepts of Responsive Web Design.
 - Became more comfortable using CSS,
