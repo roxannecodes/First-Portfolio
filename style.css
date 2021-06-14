@@ -25,7 +25,7 @@ z-index:0 ;
 
 
 
-/*** icon side bar ***/
+
 
 
 #icon-bar{
@@ -42,6 +42,7 @@ background-color: rgb(255, 163, 44);
 
 .icon-container{
   margin-top: 136px;
+  
 }
 
 .icon-container a{
@@ -57,6 +58,22 @@ background-color: rgb(255, 163, 44);
   background-color:  rgb(248, 94, 67);
   color:black;
 }
+
+#CV {
+  text-align:center;
+  font-size: 35px;
+  margin-top:30px;
+  font-weight: bolder;
+  margin-left:0;
+}
+
+ #CV a:hover{
+  background-color:  rgb(248, 94, 67);
+  color:black;
+  text-decoration:none;
+}
+  
+  
 
 
 /*** NAV BAR ***/
@@ -136,7 +153,7 @@ padding-top:75px;
 
   position: relative;
   bottom:50px;
-  left:10px;
+  
 
 }
 
@@ -399,9 +416,16 @@ right:70px;
   }
 
 
-/* **************media Querys ****************************************/
 
 
+/* /* **************media Querys ****************************************  */
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px){
+.welcome-text{
+  right:55px;
+}
+}
 /* *** TABLET LANDSCAPE *** */
 @media only screen and (max-width:1024px){
 
