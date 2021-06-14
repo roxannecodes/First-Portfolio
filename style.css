@@ -423,9 +423,23 @@ right:70px;
 /* DESKTOP */
 @media only screen and (min-width: 1024px){
 .welcome-text{
-  right:55px;
+  right:35px;
 }
+#footer h6{
+    margin-top: 0.5em;
+    font-size:15px;
+
+  }
 }
+
+@media screen and (min-width: 768px){
+  * {
+    max-width: 100%;
+  }
+}
+
+
+
 /* *** TABLET LANDSCAPE *** */
 @media only screen and (max-width:1024px){
 
@@ -722,6 +736,7 @@ right:140px;
 
   #footer h4{
     margin-top: 0.5em;
+    font-size:20px;
 
   }
 
