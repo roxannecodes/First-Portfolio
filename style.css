@@ -132,8 +132,6 @@ nav a:hover{
 }
 
 
-
-
 /*WELCOME SECTION */
 
 #welcome{
@@ -432,11 +430,7 @@ right:70px;
   }
 }
 
-@media screen and (min-width: 768px){
-  * {
-    max-width: 100%;
-  }
-}
+
 
 
 
